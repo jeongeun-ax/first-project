@@ -7,12 +7,13 @@
 class ShoppingCart:
     def __init__(self):
         self.bucket = []  # 상품 목록 저장 기능
-    def add_item(self. item):    # 장바구니 담기
+    def add_item(self, item):    # 장바구니 담기
         self.bucket.append(item)
-    def remove_item(self. item):  # 장바구니 빼기
+    def remove_item(self, item):  # 장바구니 빼기
         self.bucket.remove(item) 
     def show_items(self):   # 상품 목록 조회
         return self.bucket
+
 
 
 # 상품 클래스 
