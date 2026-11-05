@@ -2,12 +2,9 @@
 
 import random
 number = random.randint(1, 3)
-
-# 시도 횟수
 try_count = 0
 my_score = 0
 computer_score = 0
-
 game_list = ("가위", "바위", "보")
 
 # 타이틀
@@ -17,10 +14,10 @@ print("=" * 30)
 print("1. 가위 / 2. 바위 / 3. 보")
 
 
+
 # 메인 루프 
 while True: 
     user_input = input("번호를 선택하세요. : ")
-
 
     if user_input == "q":
         print(f"게임 종료합니다.")
@@ -41,7 +38,6 @@ while True:
     print(f"나: {user_number}.{game_list[user_number-1]} vs 컴퓨터: {number}.{game_list[number-1]}")
 
     
-    # 시도 횟수 증가
     try_count += 1
 
     # 입력값과 승패 비교
